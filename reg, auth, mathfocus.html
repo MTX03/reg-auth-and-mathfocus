@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Регистрация и авторизация</title>
+</head>
+<body>
+<script>
+let login = prompt("Придумайте логин");
+let password = prompt("Придумайте пароль");
+let logincheck = prompt("Введите ваш логин");
+do {
+if (login != logincheck) {alert("Вы ввели неверный логин, попробуйте ещё раз");}
+logincheck = prompt("Введите ваш логин");}
+while (logincheck != login);
+let passwordcheck = prompt("Введите ваш пароль");
+if (password != passwordcheck) {alert("Вы ввели неверный пароль")};
+if (password == passwordcheck) {alert("Авторизация успешна")};
+alert("Математический фокус");
+alert("Загадайте любое число");
+alert("Добавьте к данному числу 5");
+alert("Разделите полученное число на 2");
+let math = prompt("Введите полученный результат");
+let mathresult = (math*2)-5
+alert(mathresult);
+</script>
+</body>
+</html>
